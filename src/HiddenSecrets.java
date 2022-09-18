@@ -12,6 +12,10 @@ import java.io.IOException;
 
 // PUT YOUR IMPORTS HERE
 
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.nio.file.Path;
+
 public class HiddenSecrets {
     public static void getHiddenSecrets(File file) {
         try {
@@ -41,8 +45,13 @@ public class HiddenSecrets {
     public static void main(String[] args) {
         // Put your code to request a file path,
         // read in a string from System.in,
+        Scanner in = new Scanner(System.in);
+        String line = in.nextLine();
         // convert that string into A Path type using Paths class,
+        Path path = Paths.get(line);
+        File input = path.toFile();
         // and call the getHiddenSecrets method to get the file's meta-data
+        getHiddenSecrets(input);
         // HERE
     }
 }

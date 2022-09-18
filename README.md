@@ -35,6 +35,7 @@ java.nio.file.Path;
 1. Look up the latitude and longitude coordinates in an online map.
 1. Screenshot the map and add it into the **images** folder of this project,
 1. Last add image markdown below this line to load your map image.
+2. ![img.png](img.png)
 
 ## PART 3 - Code Scanning and Interpretation
 * Look at the getHiddenSecrets method and identify the following parts:
